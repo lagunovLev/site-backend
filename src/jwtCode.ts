@@ -1,1 +1,1 @@
-export default "secret";
+export default process.env.SECRET;

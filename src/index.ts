@@ -8,7 +8,7 @@ import cors from 'cors';
 import {changeData} from "./controllers/UserController";
 
 
-mongoose.connect("mongodb+srv://lev:Thaa8xai@cluster0.7bgk5br.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.DATABASE_URL)
     .then(() => console.log("DB ok"))
     .catch((err) => console.log("DB error", err));
 
